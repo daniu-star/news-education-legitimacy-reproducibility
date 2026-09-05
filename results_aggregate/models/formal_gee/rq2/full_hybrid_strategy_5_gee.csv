@@ -1,0 +1,17 @@
+term,coef,se,p_value,odds_ratio,ci_low,ci_high,n,model_family,cluster,scope,strategy
+Intercept,,,,,,,5411,binomial_gee_exchangeable,note_id,full_hybrid,身份否定
+C(reply_source_type)[T.browser],,,,,,,5411,binomial_gee_exchangeable,note_id,full_hybrid,身份否定
+is_author,,,,,,,5411,binomial_gee_exchangeable,note_id,full_hybrid,身份否定
+source_negative,,,,,,,5411,binomial_gee_exchangeable,note_id,full_hybrid,身份否定
+is_author:source_negative,,,,,,,5411,binomial_gee_exchangeable,note_id,full_hybrid,身份否定
+log_reply_length,,,,,,,5411,binomial_gee_exchangeable,note_id,full_hybrid,身份否定
+e0,,,,,,,5411,binomial_gee_exchangeable,note_id,full_hybrid,身份否定
+e1,,,,,,,5411,binomial_gee_exchangeable,note_id,full_hybrid,身份否定
+e2,,,,,,,5411,binomial_gee_exchangeable,note_id,full_hybrid,身份否定
+e3,,,,,,,5411,binomial_gee_exchangeable,note_id,full_hybrid,身份否定
+e4,,,,,,,5411,binomial_gee_exchangeable,note_id,full_hybrid,身份否定
+e5,,,,,,,5411,binomial_gee_exchangeable,note_id,full_hybrid,身份否定
+e6,,,,,,,5411,binomial_gee_exchangeable,note_id,full_hybrid,身份否定
+e7,,,,,,,5411,binomial_gee_exchangeable,note_id,full_hybrid,身份否定
+e8,,,,,,,5411,binomial_gee_exchangeable,note_id,full_hybrid,身份否定
+e9,,,,,,,5411,binomial_gee_exchangeable,note_id,full_hybrid,身份否定

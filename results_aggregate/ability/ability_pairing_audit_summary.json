@@ -1,0 +1,8 @@
+{
+  "n_v2_audit": 360,
+  "pair_precision_macro": 0.8430555555555556,
+  "pair_recall_macro": 0.8351851851851853,
+  "exact_match": 0.825,
+  "n_mentions_full": 1959,
+  "n_comments_with_mentions": 1675
+}

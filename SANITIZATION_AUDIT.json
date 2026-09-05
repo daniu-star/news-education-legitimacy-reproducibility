@@ -1,0 +1,16 @@
+{
+  "package": "news-education-legitimacy-reproducibility-v2.3-clean",
+  "file_count": 146,
+  "forbidden_row_level_binary_files": [],
+  "pattern_hits": {
+    "generic_sk_key": [],
+    "email": [],
+    "cn_mobile": [],
+    "private_runtime_path": []
+  },
+  "python_files": 45,
+  "raw_databases_included": false,
+  "raw_corpora_included": false,
+  "row_level_labels_included": false,
+  "status": "PASS"
+}

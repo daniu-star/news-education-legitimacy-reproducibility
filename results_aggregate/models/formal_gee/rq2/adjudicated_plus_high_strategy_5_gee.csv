@@ -1,0 +1,17 @@
+term,coef,se,p_value,odds_ratio,ci_low,ci_high,n,model_family,cluster,scope,strategy
+Intercept,,,,,,,1010,binomial_gee_exchangeable,note_id,adjudicated_plus_high,身份否定
+C(reply_source_type)[T.browser],,,,,,,1010,binomial_gee_exchangeable,note_id,adjudicated_plus_high,身份否定
+is_author,,,,,,,1010,binomial_gee_exchangeable,note_id,adjudicated_plus_high,身份否定
+source_negative,,,,,,,1010,binomial_gee_exchangeable,note_id,adjudicated_plus_high,身份否定
+is_author:source_negative,,,,,,,1010,binomial_gee_exchangeable,note_id,adjudicated_plus_high,身份否定
+log_reply_length,,,,,,,1010,binomial_gee_exchangeable,note_id,adjudicated_plus_high,身份否定
+e0,,,,,,,1010,binomial_gee_exchangeable,note_id,adjudicated_plus_high,身份否定
+e1,,,,,,,1010,binomial_gee_exchangeable,note_id,adjudicated_plus_high,身份否定
+e2,,,,,,,1010,binomial_gee_exchangeable,note_id,adjudicated_plus_high,身份否定
+e3,,,,,,,1010,binomial_gee_exchangeable,note_id,adjudicated_plus_high,身份否定
+e4,,,,,,,1010,binomial_gee_exchangeable,note_id,adjudicated_plus_high,身份否定
+e5,,,,,,,1010,binomial_gee_exchangeable,note_id,adjudicated_plus_high,身份否定
+e6,,,,,,,1010,binomial_gee_exchangeable,note_id,adjudicated_plus_high,身份否定
+e7,,,,,,,1010,binomial_gee_exchangeable,note_id,adjudicated_plus_high,身份否定
+e8,,,,,,,1010,binomial_gee_exchangeable,note_id,adjudicated_plus_high,身份否定
+e9,,,,,,,1010,binomial_gee_exchangeable,note_id,adjudicated_plus_high,身份否定

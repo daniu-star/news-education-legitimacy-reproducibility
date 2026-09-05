@@ -1,0 +1,11 @@
+topic_id,topic_label,n_documents,share,share_pct,is_substantive,n_total,model,k,epochs,seed,assignment_rule,provenance
+0,噪音或未命名主题,919,0.042196611414665505,4.219661141466551,0,21779,FASTopic,10,100,,argmax(theta axis=1),analysis/报告/统计建模/stage5_summary.json
+1,噪音或未命名主题,140,0.00642821066164654,0.642821066164654,0,21779,FASTopic,10,100,,argmax(theta axis=1),analysis/报告/统计建模/stage5_summary.json
+2,噪音或未命名主题,2119,0.09729555994306442,9.729555994306443,0,21779,FASTopic,10,100,,argmax(theta axis=1),analysis/报告/统计建模/stage5_summary.json
+3,噪音或未命名主题,277,0.012718673951972083,1.2718673951972082,0,21779,FASTopic,10,100,,argmax(theta axis=1),analysis/报告/统计建模/stage5_summary.json
+4,噪音或未命名主题,4420,0.20294779374626934,20.294779374626934,0,21779,FASTopic,10,100,,argmax(theta axis=1),analysis/报告/统计建模/stage5_summary.json
+5,噪音或未命名主题,13,0.0005969052757243216,0.059690527572432164,0,21779,FASTopic,10,100,,argmax(theta axis=1),analysis/报告/统计建模/stage5_summary.json
+6,噪音或未命名主题,1701,0.07810275953900546,7.810275953900546,0,21779,FASTopic,10,100,,argmax(theta axis=1),analysis/报告/统计建模/stage5_summary.json
+7,噪音或未命名主题,204,0.009366821249827816,0.9366821249827816,0,21779,FASTopic,10,100,,argmax(theta axis=1),analysis/报告/统计建模/stage5_summary.json
+8,AI技术的替代性焦虑,5418,0.2487717526057211,24.87717526057211,1,21779,FASTopic,10,100,,argmax(theta axis=1),analysis/报告/统计建模/stage5_summary.json
+9,就业与职业潜力,6568,0.3015749116121034,30.15749116121034,1,21779,FASTopic,10,100,,argmax(theta axis=1),analysis/报告/统计建模/stage5_summary.json

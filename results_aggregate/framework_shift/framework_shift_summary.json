@@ -1,0 +1,11 @@
+{
+  "n_notes": 696,
+  "mean_frame_shift_tv": 0.418557599385238,
+  "median_frame_shift_tv": 0.5,
+  "mean_employment_attraction": 0.1351670396211588,
+  "employment_attraction_ci95": [
+    0.11134852152962223,
+    0.15919379971340292
+  ],
+  "positive_employment_attraction_share": 0.4425287356321839
+}

@@ -1,0 +1,11 @@
+model_id,rq,outcome,ok,n,formula,subset
+rq1_judgment_clear,RQ1,judgment_clear,1,21779,judgment_clear ~ e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9 + o0 + o1 + o2 + o3 + o4 + o5 + o6 + C(source_type) + is_reply + is_note_author + log_text_length,
+rq1_negative,RQ1,negative,1,16533,negative ~ e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9 + o0 + o1 + o2 + o3 + o4 + o5 + o6 + C(source_type) + is_reply + is_note_author + log_text_length,
+rq1_positive,RQ1,positive,1,16533,positive ~ e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9 + o0 + o1 + o2 + o3 + o4 + o5 + o6 + C(source_type) + is_reply + is_note_author + log_text_length,
+rq1_negative_专业,RQ1,negative,1,6947,negative ~ e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9 + C(source_type) + is_reply + log_text_length,专业
+rq1_negative_职业,RQ1,negative,1,6623,negative ~ e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9 + C(source_type) + is_reply + log_text_length,职业
+rq1_negative_行业,RQ1,negative,1,2208,negative ~ e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9 + C(source_type) + is_reply + log_text_length,行业
+rq4_any_like,RQ4,any_like,1,21779,any_like ~ e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9 + o0 + o1 + o2 + o3 + o4 + o5 + o6 + C(source_type) + is_reply + is_note_author + is_reply:is_note_author + log_text_length,
+rq4_positive_likes,RQ4,positive_likes,1,9458,positive_likes ~ e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9 + o0 + o1 + o2 + o3 + o4 + o5 + o6 + C(source_type) + is_reply + is_note_author + is_reply:is_note_author + log_text_length,
+rq4_root_has_reply,RQ4,has_reply,1,14255,has_reply ~ e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9 + o0 + o1 + o2 + o3 + o4 + o5 + o6 + C(source_type) + is_note_author + log_text_length,
+rq4_root_reply_count,RQ4,reply_count,1,2323,reply_count ~ e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9 + o0 + o1 + o2 + o3 + o4 + o5 + o6 + C(source_type) + is_note_author + log_text_length,

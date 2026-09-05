@@ -1,0 +1,33 @@
+# Private data and databases
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+raw/
+raw_data/
+private/
+data_private/
+corpora/
+embeddings/
+labels/
+*.jsonl
+*.npy
+*.npz
+
+# Credentials
+.env
+.env.*
+!.env.example
+*.key
+*secret*
+credentials/
+tokens/
+cookies/
+
+# Runtime / caches
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+*.log

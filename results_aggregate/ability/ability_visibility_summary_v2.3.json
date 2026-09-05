@@ -1,0 +1,13 @@
+{
+  "total_mentions": 1959,
+  "foreground_mentions": 1467,
+  "high_order_mentions": 492,
+  "foreground_explicit": 52,
+  "high_order_explicit": 5,
+  "foreground_explicit_rate": 0.0354464894342195,
+  "high_order_explicit_rate": 0.01016260162601626,
+  "fisher_odds_ratio": 3.579363957597173,
+  "fisher_p_value": 0.002814837959782802,
+  "ai_replace_foreground": 9,
+  "ai_replace_high_order": 0
+}

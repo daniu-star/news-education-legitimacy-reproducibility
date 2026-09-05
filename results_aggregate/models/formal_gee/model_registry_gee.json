@@ -1,0 +1,323 @@
+{
+  "model_policy": "GEE for binary outcomes; negative-binomial models remain separate for count outcomes",
+  "database": "C:\\Users\\13067\\Desktop\\论文\\新闻传播教育\\analysis\\02_views\\analysis.db",
+  "n_comments": 21779,
+  "cluster": "note_id",
+  "working_correlation": "Exchangeable",
+  "registry": [
+    {
+      "model_id": "rq1_judgment_clear",
+      "rq": "RQ1",
+      "outcome": "judgment_clear",
+      "model_family": "binomial_gee_exchangeable",
+      "cluster": "note_id",
+      "n": 21779,
+      "formula": "judgment_clear ~ e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9 + o0 + o1 + o2 + o3 + o4 + o5 + o6 + C(source_type) + is_reply + is_note_author + log_text_length"
+    },
+    {
+      "model_id": "rq1_negative",
+      "rq": "RQ1",
+      "outcome": "negative",
+      "model_family": "binomial_gee_exchangeable",
+      "cluster": "note_id",
+      "n": 16519,
+      "formula": "negative ~ e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9 + o0 + o1 + o2 + o3 + o4 + o5 + o6 + C(source_type) + is_reply + is_note_author + log_text_length"
+    },
+    {
+      "model_id": "rq1_positive",
+      "rq": "RQ1",
+      "outcome": "positive",
+      "model_family": "binomial_gee_exchangeable",
+      "cluster": "note_id",
+      "n": 16519,
+      "formula": "positive ~ e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9 + o0 + o1 + o2 + o3 + o4 + o5 + o6 + C(source_type) + is_reply + is_note_author + log_text_length"
+    },
+    {
+      "model_id": "rq4_any_like",
+      "rq": "RQ4",
+      "outcome": "any_like",
+      "model_family": "binomial_gee_exchangeable",
+      "cluster": "note_id",
+      "n": 21779,
+      "formula": "any_like ~ e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9 + o0 + o1 + o2 + o3 + o4 + o5 + o6 + C(source_type) + is_reply + is_note_author + is_reply:is_note_author + log_text_length"
+    },
+    {
+      "model_id": "rq2_adjudicated_strategy_0",
+      "rq": "RQ2",
+      "outcome": "同层直接回应",
+      "scope": "adjudicated",
+      "model_family": "binomial_gee_exchangeable",
+      "cluster": "note_id",
+      "n": 1010,
+      "formula": "s0 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9"
+    },
+    {
+      "model_id": "rq2_adjudicated_strategy_1",
+      "rq": "RQ2",
+      "outcome": "具体能力解释",
+      "scope": "adjudicated",
+      "model_family": "binomial_gee_exchangeable",
+      "cluster": "note_id",
+      "n": 1010,
+      "formula": "s1 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9"
+    },
+    {
+      "model_id": "rq2_adjudicated_strategy_2",
+      "rq": "RQ2",
+      "outcome": "个人经验回应",
+      "scope": "adjudicated",
+      "model_family": "binomial_gee_exchangeable",
+      "cluster": "note_id",
+      "n": 1010,
+      "formula": "s2 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9"
+    },
+    {
+      "model_id": "rq2_adjudicated_strategy_3",
+      "rq": "RQ2",
+      "outcome": "市场结果回应",
+      "scope": "adjudicated",
+      "model_family": "binomial_gee_exchangeable",
+      "cluster": "note_id",
+      "n": 1010,
+      "formula": "s3 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9"
+    },
+    {
+      "model_id": "rq2_adjudicated_strategy_4",
+      "rq": "RQ2",
+      "outcome": "公共价值回应",
+      "scope": "adjudicated",
+      "model_family": "binomial_gee_exchangeable",
+      "cluster": "note_id",
+      "n": 1010,
+      "formula": "s4 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9"
+    },
+    {
+      "model_id": "rq2_adjudicated_strategy_5",
+      "rq": "RQ2",
+      "outcome": "身份否定",
+      "scope": "adjudicated",
+      "model_family": "binomial_gee_exchangeable",
+      "cluster": "note_id",
+      "n": 1010,
+      "formula": "s5 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9"
+    },
+    {
+      "model_id": "rq2_adjudicated_strategy_6",
+      "rq": "RQ2",
+      "outcome": "反讽与情绪",
+      "scope": "adjudicated",
+      "model_family": "binomial_gee_exchangeable",
+      "cluster": "note_id",
+      "n": 1010,
+      "formula": "s6 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9"
+    },
+    {
+      "model_id": "rq2_adjudicated_translation",
+      "rq": "RQ2",
+      "outcome": "translation_any",
+      "scope": "adjudicated",
+      "model_family": "binomial_gee_exchangeable",
+      "cluster": "note_id",
+      "n": 1010,
+      "formula": "translation_any ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9"
+    },
+    {
+      "model_id": "rq2_adjudicated_plus_high_strategy_0",
+      "rq": "RQ2",
+      "outcome": "同层直接回应",
+      "scope": "adjudicated_plus_high",
+      "model_family": "binomial_gee_exchangeable",
+      "cluster": "note_id",
+      "n": 1010,
+      "formula": "s0 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9"
+    },
+    {
+      "model_id": "rq2_adjudicated_plus_high_strategy_1",
+      "rq": "RQ2",
+      "outcome": "具体能力解释",
+      "scope": "adjudicated_plus_high",
+      "model_family": "binomial_gee_exchangeable",
+      "cluster": "note_id",
+      "n": 1010,
+      "formula": "s1 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9"
+    },
+    {
+      "model_id": "rq2_adjudicated_plus_high_strategy_2",
+      "rq": "RQ2",
+      "outcome": "个人经验回应",
+      "scope": "adjudicated_plus_high",
+      "model_family": "binomial_gee_exchangeable",
+      "cluster": "note_id",
+      "n": 1010,
+      "formula": "s2 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9"
+    },
+    {
+      "model_id": "rq2_adjudicated_plus_high_strategy_3",
+      "rq": "RQ2",
+      "outcome": "市场结果回应",
+      "scope": "adjudicated_plus_high",
+      "model_family": "binomial_gee_exchangeable",
+      "cluster": "note_id",
+      "n": 1010,
+      "formula": "s3 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9"
+    },
+    {
+      "model_id": "rq2_adjudicated_plus_high_strategy_4",
+      "rq": "RQ2",
+      "outcome": "公共价值回应",
+      "scope": "adjudicated_plus_high",
+      "model_family": "binomial_gee_exchangeable",
+      "cluster": "note_id",
+      "n": 1010,
+      "formula": "s4 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9"
+    },
+    {
+      "model_id": "rq2_adjudicated_plus_high_strategy_5",
+      "rq": "RQ2",
+      "outcome": "身份否定",
+      "scope": "adjudicated_plus_high",
+      "model_family": "binomial_gee_exchangeable",
+      "cluster": "note_id",
+      "n": 1010,
+      "formula": "s5 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9"
+    },
+    {
+      "model_id": "rq2_adjudicated_plus_high_strategy_6",
+      "rq": "RQ2",
+      "outcome": "反讽与情绪",
+      "scope": "adjudicated_plus_high",
+      "model_family": "binomial_gee_exchangeable",
+      "cluster": "note_id",
+      "n": 1010,
+      "formula": "s6 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9"
+    },
+    {
+      "model_id": "rq2_adjudicated_plus_high_translation",
+      "rq": "RQ2",
+      "outcome": "translation_any",
+      "scope": "adjudicated_plus_high",
+      "model_family": "binomial_gee_exchangeable",
+      "cluster": "note_id",
+      "n": 1010,
+      "formula": "translation_any ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9"
+    },
+    {
+      "model_id": "rq2_full_hybrid_strategy_0",
+      "rq": "RQ2",
+      "outcome": "同层直接回应",
+      "scope": "full_hybrid",
+      "model_family": "binomial_gee_exchangeable",
+      "cluster": "note_id",
+      "n": 5411,
+      "formula": "s0 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9"
+    },
+    {
+      "model_id": "rq2_full_hybrid_strategy_1",
+      "rq": "RQ2",
+      "outcome": "具体能力解释",
+      "scope": "full_hybrid",
+      "model_family": "binomial_gee_exchangeable",
+      "cluster": "note_id",
+      "n": 5411,
+      "formula": "s1 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9"
+    },
+    {
+      "model_id": "rq2_full_hybrid_strategy_2",
+      "rq": "RQ2",
+      "outcome": "个人经验回应",
+      "scope": "full_hybrid",
+      "model_family": "binomial_gee_exchangeable",
+      "cluster": "note_id",
+      "n": 5411,
+      "formula": "s2 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9"
+    },
+    {
+      "model_id": "rq2_full_hybrid_strategy_3",
+      "rq": "RQ2",
+      "outcome": "市场结果回应",
+      "scope": "full_hybrid",
+      "model_family": "binomial_gee_exchangeable",
+      "cluster": "note_id",
+      "n": 5411,
+      "formula": "s3 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9"
+    },
+    {
+      "model_id": "rq2_full_hybrid_strategy_4",
+      "rq": "RQ2",
+      "outcome": "公共价值回应",
+      "scope": "full_hybrid",
+      "model_family": "binomial_gee_exchangeable",
+      "cluster": "note_id",
+      "n": 5411,
+      "formula": "s4 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9"
+    },
+    {
+      "model_id": "rq2_full_hybrid_strategy_5",
+      "rq": "RQ2",
+      "outcome": "身份否定",
+      "scope": "full_hybrid",
+      "model_family": "binomial_gee_exchangeable",
+      "cluster": "note_id",
+      "n": 5411,
+      "formula": "s5 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9"
+    },
+    {
+      "model_id": "rq2_full_hybrid_strategy_6",
+      "rq": "RQ2",
+      "outcome": "反讽与情绪",
+      "scope": "full_hybrid",
+      "model_family": "binomial_gee_exchangeable",
+      "cluster": "note_id",
+      "n": 5411,
+      "formula": "s6 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9"
+    },
+    {
+      "model_id": "rq2_full_hybrid_strategy_7",
+      "rq": "RQ2",
+      "outcome": "话题转移",
+      "scope": "full_hybrid",
+      "model_family": "binomial_gee_exchangeable",
+      "cluster": "note_id",
+      "n": 5411,
+      "formula": "s7 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9"
+    },
+    {
+      "model_id": "rq2_full_hybrid_strategy_8",
+      "rq": "RQ2",
+      "outcome": "其他",
+      "scope": "full_hybrid",
+      "model_family": "binomial_gee_exchangeable",
+      "cluster": "note_id",
+      "n": 5411,
+      "formula": "s8 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9"
+    },
+    {
+      "model_id": "rq2_full_hybrid_translation",
+      "rq": "RQ2",
+      "outcome": "translation_any",
+      "scope": "full_hybrid",
+      "model_family": "binomial_gee_exchangeable",
+      "cluster": "note_id",
+      "n": 5411,
+      "formula": "translation_any ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9"
+    },
+    {
+      "model_id": "rq3_可跨职业迁移",
+      "rq": "RQ3",
+      "outcome": "可跨职业迁移",
+      "model_family": "binomial_gee_exchangeable",
+      "cluster": "note_id",
+      "n": 1959,
+      "formula": "y ~ C(ability_type) + ai_context + C(source_type) + is_reply"
+    },
+    {
+      "model_id": "rq3_大学教育通用",
+      "rq": "RQ3",
+      "outcome": "大学教育通用",
+      "model_family": "binomial_gee_exchangeable",
+      "cluster": "note_id",
+      "n": 1959,
+      "formula": "y ~ C(ability_type) + ai_context + C(source_type) + is_reply"
+    }
+  ]
+}

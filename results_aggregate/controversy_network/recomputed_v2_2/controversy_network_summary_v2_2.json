@@ -1,0 +1,22 @@
+{
+  "high_quality_relations_n": 2253,
+  "agent_adjudicated_relevant_n": 1010,
+  "label_complete_relation_n": 1575,
+  "object_overlap_rate_in_label_complete": 0.753015873015873,
+  "evidence_any_overlap_rate_in_label_complete": 0.4901587301587302,
+  "first_evidence_same_rate_in_label_complete": 0.24634920634920635,
+  "directional_relation_n": 794,
+  "observed_same_polarity_rate": 0.5780856423173804,
+  "expected_same_polarity_rate": 0.5068397109302134,
+  "polarity_assortativity": 0.14446810289926854,
+  "agent_translation_rate": 0.1306930693069307,
+  "high_quality_translation_rate": 0.05903240124278739,
+  "all_observed_users_in_hq_relations": 2222,
+  "connected_users_after_self_loop_removal": 2125,
+  "unique_nonself_directed_user_edges": 1613,
+  "user_network_reciprocity": 0.0024798512089274642,
+  "user_network_weak_components": 517,
+  "top_5pct_connected_nodes_outdegree_edge_share": 0.39243645381277126,
+  "strategy_field_used": "final_reply_strategy_terminal",
+  "translation_field_used": "final_translation_link_terminal"
+}

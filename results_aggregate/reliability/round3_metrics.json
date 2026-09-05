@@ -1,0 +1,756 @@
+{
+  "relevance_status": {
+    "n": 120,
+    "accuracy": 0.9583333333333334,
+    "alpha": 0.9341852684692591,
+    "macro_f1": 0.9416381624921843,
+    "per_label": [
+      {
+        "label": "弱相关",
+        "support_A": 53,
+        "support_B": 53,
+        "precision": 0.9622641509433962,
+        "recall": 0.9622641509433962,
+        "f1": 0.9622641509433962
+      },
+      {
+        "label": "无关",
+        "support_A": 6,
+        "support_B": 6,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      {
+        "label": "核心相关",
+        "support_A": 47,
+        "support_B": 48,
+        "precision": 0.9791666666666666,
+        "recall": 1.0,
+        "f1": 0.9894736842105263
+      },
+      {
+        "label": "语境相关",
+        "support_A": 14,
+        "support_B": 13,
+        "precision": 0.8461538461538461,
+        "recall": 0.7857142857142857,
+        "f1": 0.8148148148148148
+      }
+    ]
+  },
+  "translation_link": {
+    "n": 120,
+    "accuracy": 1.0,
+    "alpha": 1.0,
+    "macro_f1": 1.0,
+    "per_label": [
+      {
+        "label": "仅抽象价值表达",
+        "support_A": 5,
+        "support_B": 5,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      {
+        "label": "无转译",
+        "support_A": 97,
+        "support_B": 97,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      {
+        "label": "能力—公共价值连接",
+        "support_A": 5,
+        "support_B": 5,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      {
+        "label": "能力—职业连接",
+        "support_A": 11,
+        "support_B": 11,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      {
+        "label": "课程—能力连接",
+        "support_A": 2,
+        "support_B": 2,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    ]
+  },
+  "evaluation_pairs": {
+    "n": 120,
+    "label_count": 27,
+    "micro_precision": 0.9693877551020408,
+    "micro_recall": 0.9693877551020408,
+    "micro_f1": 0.9693877551020408,
+    "exact_match": 0.9583333333333334,
+    "mean_jaccard": 0.9583333333333334,
+    "mean_binary_alpha": 0.887953863347739,
+    "per_label": [
+      {
+        "label": "专业|中性",
+        "support_A": 6,
+        "support_B": 6,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "专业|否定",
+        "support_A": 12,
+        "support_B": 12,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "专业|条件性否定",
+        "support_A": 5,
+        "support_B": 5,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "专业|条件性认可",
+        "support_A": 4,
+        "support_B": 4,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "专业|认可",
+        "support_A": 5,
+        "support_B": 5,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "学科|否定",
+        "support_A": 1,
+        "support_B": 1,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "学科|条件性否定",
+        "support_A": 1,
+        "support_B": 1,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "未明确|否定",
+        "support_A": 2,
+        "support_B": 1,
+        "precision_B_vs_A": 0.0,
+        "recall_B_vs_A": 0.0,
+        "f1": 0,
+        "alpha": -0.012658227848102444
+      },
+      {
+        "label": "未明确|认可",
+        "support_A": 1,
+        "support_B": 1,
+        "precision_B_vs_A": 0.0,
+        "recall_B_vs_A": 0.0,
+        "f1": 0,
+        "alpha": -0.00840336134454267
+      },
+      {
+        "label": "知识|中性",
+        "support_A": 1,
+        "support_B": 1,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "知识|否定",
+        "support_A": 4,
+        "support_B": 4,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "知识|条件性认可",
+        "support_A": 2,
+        "support_B": 2,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "职业|中性",
+        "support_A": 12,
+        "support_B": 12,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "职业|否定",
+        "support_A": 9,
+        "support_B": 9,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "职业|条件性认可",
+        "support_A": 3,
+        "support_B": 3,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "职业|认可",
+        "support_A": 5,
+        "support_B": 5,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "能力|否定",
+        "support_A": 5,
+        "support_B": 5,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "能力|条件性否定",
+        "support_A": 1,
+        "support_B": 1,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "能力|条件性认可",
+        "support_A": 1,
+        "support_B": 1,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "能力|认可",
+        "support_A": 4,
+        "support_B": 4,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "行业|中性",
+        "support_A": 1,
+        "support_B": 1,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "行业|否定",
+        "support_A": 7,
+        "support_B": 7,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "行业|条件性否定",
+        "support_A": 2,
+        "support_B": 2,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "行业|条件性认可",
+        "support_A": 1,
+        "support_B": 1,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "行业|认可",
+        "support_A": 0,
+        "support_B": 1,
+        "precision_B_vs_A": 0.0,
+        "recall_B_vs_A": 1,
+        "f1": 0.0,
+        "alpha": -0.004184100418400893
+      },
+      {
+        "label": "课程|否定",
+        "support_A": 1,
+        "support_B": 1,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "课程|条件性认可",
+        "support_A": 2,
+        "support_B": 2,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      }
+    ]
+  },
+  "evidence_basis": {
+    "n": 120,
+    "label_count": 10,
+    "micro_precision": 0.9894736842105263,
+    "micro_recall": 0.9690721649484536,
+    "micro_f1": 0.9791666666666666,
+    "exact_match": 0.975,
+    "mean_jaccard": 0.9791666666666666,
+    "mean_binary_alpha": 0.9751456879165327,
+    "per_label": [
+      {
+        "label": "AI与平台可替代性",
+        "support_A": 1,
+        "support_B": 1,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "专业知识与理论",
+        "support_A": 12,
+        "support_B": 12,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "个人学习经历",
+        "support_A": 15,
+        "support_B": 15,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "公共价值",
+        "support_A": 5,
+        "support_B": 5,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "反讽或梗",
+        "support_A": 11,
+        "support_B": 10,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 0.9090909090909091,
+        "f1": 0.9523809523809523,
+        "alpha": 0.9478147423352903
+      },
+      {
+        "label": "实习就业经历",
+        "support_A": 14,
+        "support_B": 14,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "招聘收入与市场结果",
+        "support_A": 17,
+        "support_B": 17,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "无依据断言",
+        "support_A": 8,
+        "support_B": 6,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 0.75,
+        "f1": 0.8571428571428571,
+        "alpha": 0.8482932996207333
+      },
+      {
+        "label": "身份情感",
+        "support_A": 12,
+        "support_B": 13,
+        "precision_B_vs_A": 0.9230769230769231,
+        "recall_B_vs_A": 1.0,
+        "f1": 0.9600000000000001,
+        "alpha": 0.9553488372093023
+      },
+      {
+        "label": "身边他人经历",
+        "support_A": 2,
+        "support_B": 2,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      }
+    ]
+  },
+  "reply_strategy": {
+    "n": 120,
+    "label_count": 8,
+    "micro_precision": 1.0,
+    "micro_recall": 0.9878048780487805,
+    "micro_f1": 0.9938650306748467,
+    "exact_match": 0.9916666666666667,
+    "mean_jaccard": 0.9958333333333333,
+    "mean_binary_alpha": 0.9966927571381325,
+    "per_label": [
+      {
+        "label": "个人经验回应",
+        "support_A": 13,
+        "support_B": 13,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "公共价值回应",
+        "support_A": 2,
+        "support_B": 2,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "具体能力解释",
+        "support_A": 5,
+        "support_B": 5,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "反讽与情绪",
+        "support_A": 24,
+        "support_B": 23,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 0.9583333333333334,
+        "f1": 0.9787234042553191,
+        "alpha": 0.9735420571050601
+      },
+      {
+        "label": "同层直接回应",
+        "support_A": 24,
+        "support_B": 24,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "市场结果回应",
+        "support_A": 6,
+        "support_B": 6,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "话题转移",
+        "support_A": 7,
+        "support_B": 7,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "身份否定",
+        "support_A": 1,
+        "support_B": 1,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      }
+    ]
+  },
+  "ability_type": {
+    "n": 120,
+    "label_count": 6,
+    "micro_precision": 1.0,
+    "micro_recall": 1.0,
+    "micro_f1": 1.0,
+    "exact_match": 1.0,
+    "mean_jaccard": 1.0,
+    "mean_binary_alpha": 1.0,
+    "per_label": [
+      {
+        "label": "事实核查与证据",
+        "support_A": 3,
+        "support_B": 3,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "伦理责任与公共判断",
+        "support_A": 3,
+        "support_B": 3,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "基础内容生产",
+        "support_A": 5,
+        "support_B": 5,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "平台运营与商业传播",
+        "support_A": 10,
+        "support_B": 10,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "社会解释与议题发现",
+        "support_A": 1,
+        "support_B": 1,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "采访与信源关系",
+        "support_A": 4,
+        "support_B": 4,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      }
+    ]
+  },
+  "ability_property_explicit": {
+    "n": 120,
+    "label_count": 3,
+    "micro_precision": 1.0,
+    "micro_recall": 1.0,
+    "micro_f1": 1.0,
+    "exact_match": 1.0,
+    "mean_jaccard": 1.0,
+    "mean_binary_alpha": 1.0,
+    "per_label": [
+      {
+        "label": "可跨职业迁移",
+        "support_A": 4,
+        "support_B": 4,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "大学教育通用",
+        "support_A": 2,
+        "support_B": 2,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "新闻专业独特",
+        "support_A": 2,
+        "support_B": 2,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      }
+    ]
+  },
+  "ability_pairs": {
+    "n": 120,
+    "label_count": 12,
+    "micro_precision": 1.0,
+    "micro_recall": 1.0,
+    "micro_f1": 1.0,
+    "exact_match": 1.0,
+    "mean_jaccard": 1.0,
+    "mean_binary_alpha": 1.0,
+    "per_label": [
+      {
+        "label": "事实核查与证据|新闻专业独特",
+        "support_A": 1,
+        "support_B": 1,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "事实核查与证据|未明确",
+        "support_A": 2,
+        "support_B": 2,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "伦理责任与公共判断|新闻专业独特",
+        "support_A": 2,
+        "support_B": 2,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "伦理责任与公共判断|未明确",
+        "support_A": 1,
+        "support_B": 1,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "基础内容生产|大学教育通用",
+        "support_A": 1,
+        "support_B": 1,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "基础内容生产|未明确",
+        "support_A": 4,
+        "support_B": 4,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "平台运营与商业传播|可跨职业迁移",
+        "support_A": 4,
+        "support_B": 4,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "平台运营与商业传播|大学教育通用",
+        "support_A": 1,
+        "support_B": 1,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "平台运营与商业传播|未明确",
+        "support_A": 5,
+        "support_B": 5,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "社会解释与议题发现|未明确",
+        "support_A": 1,
+        "support_B": 1,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "采访与信源关系|大学教育通用",
+        "support_A": 1,
+        "support_B": 1,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "label": "采访与信源关系|未明确",
+        "support_A": 3,
+        "support_B": 3,
+        "precision_B_vs_A": 1.0,
+        "recall_B_vs_A": 1.0,
+        "f1": 1.0,
+        "alpha": 1.0
+      }
+    ]
+  }
+}

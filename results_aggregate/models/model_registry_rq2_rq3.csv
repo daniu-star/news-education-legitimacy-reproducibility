@@ -1,0 +1,32 @@
+model_id,rq,outcome,scope,ok,n,formula
+rq2_adjudicated_s0,RQ2,同层直接回应,adjudicated,1,1010,s0 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9
+rq2_adjudicated_s1,RQ2,具体能力解释,adjudicated,1,1010,s1 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9
+rq2_adjudicated_s2,RQ2,个人经验回应,adjudicated,1,1010,s2 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9
+rq2_adjudicated_s3,RQ2,市场结果回应,adjudicated,1,1010,s3 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9
+rq2_adjudicated_s4,RQ2,公共价值回应,adjudicated,1,1010,s4 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9
+rq2_adjudicated_s5,RQ2,身份否定,adjudicated,1,1010,s5 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9
+rq2_adjudicated_s6,RQ2,反讽与情绪,adjudicated,1,1010,s6 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9
+rq2_adjudicated_translation,RQ2,translation_any,adjudicated,1,1010,translation_any ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9
+rq2_adjudicated_plus_high_s0,RQ2,同层直接回应,adjudicated_plus_high,1,2253,s0 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9
+rq2_adjudicated_plus_high_s1,RQ2,具体能力解释,adjudicated_plus_high,1,2253,s1 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9
+rq2_adjudicated_plus_high_s2,RQ2,个人经验回应,adjudicated_plus_high,1,2253,s2 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9
+rq2_adjudicated_plus_high_s3,RQ2,市场结果回应,adjudicated_plus_high,1,2253,s3 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9
+rq2_adjudicated_plus_high_s4,RQ2,公共价值回应,adjudicated_plus_high,1,2253,s4 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9
+rq2_adjudicated_plus_high_s5,RQ2,身份否定,adjudicated_plus_high,1,2253,s5 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9
+rq2_adjudicated_plus_high_s6,RQ2,反讽与情绪,adjudicated_plus_high,1,2253,s6 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9
+rq2_adjudicated_plus_high_s7,RQ2,话题转移,adjudicated_plus_high,1,2253,s7 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9
+rq2_adjudicated_plus_high_translation,RQ2,translation_any,adjudicated_plus_high,1,2253,translation_any ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9
+rq2_full_hybrid_s0,RQ2,同层直接回应,full_hybrid,1,5411,s0 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9
+rq2_full_hybrid_s1,RQ2,具体能力解释,full_hybrid,1,5411,s1 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9
+rq2_full_hybrid_s2,RQ2,个人经验回应,full_hybrid,1,5411,s2 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9
+rq2_full_hybrid_s3,RQ2,市场结果回应,full_hybrid,1,5411,s3 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9
+rq2_full_hybrid_s4,RQ2,公共价值回应,full_hybrid,1,5411,s4 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9
+rq2_full_hybrid_s5,RQ2,身份否定,full_hybrid,1,5411,s5 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9
+rq2_full_hybrid_s6,RQ2,反讽与情绪,full_hybrid,1,5411,s6 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9
+rq2_full_hybrid_s7,RQ2,话题转移,full_hybrid,1,5411,s7 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9
+rq2_full_hybrid_s8,RQ2,其他,full_hybrid,1,5411,s8 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9
+rq2_full_hybrid_translation,RQ2,translation_any,full_hybrid,1,5411,translation_any ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9
+rq3_可跨职业迁移,RQ3,可跨职业迁移,,1,1959,y ~ C(ability_type) + ai_context + C(source_type) + is_reply
+rq3_大学教育通用,RQ3,大学教育通用,,1,1959,y ~ C(ability_type) + ai_context + C(source_type) + is_reply
+rq3_可由AI替代,RQ3,可由AI替代,,1,1959,y ~ C(ability_type) + ai_context + C(source_type) + is_reply
+rq3_新闻专业独特,RQ3,新闻专业独特,,1,1959,y ~ C(ability_type) + ai_context + C(source_type) + is_reply
