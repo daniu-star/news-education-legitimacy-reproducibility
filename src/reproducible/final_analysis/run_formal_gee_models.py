@@ -9,11 +9,14 @@ Required environment variable:
                    00_freeze/analysis_v2_frozen.db.
 
 Optional:
+    NEWS_EDU_DB: explicit private database path. If omitted, the runner checks
+                 the frozen database before legacy analysis paths.
     NEWS_EDU_GEE_OUT: output directory. Defaults to <root>/formal_gee_results.
 """
 from __future__ import annotations
 
 import ast
+import hashlib
 import json
 import os
 import sqlite3
@@ -52,6 +55,12 @@ def parse_list(value):
 
 
 def find_database(root: Path) -> Path:
+    explicit = os.environ.get("NEWS_EDU_DB")
+    if explicit:
+        path = Path(explicit)
+        if not path.exists():
+            raise FileNotFoundError(f"NEWS_EDU_DB does not exist: {path}")
+        return path
     candidates = [
         root / "00_freeze" / "analysis_v2_frozen.db",
         root / "02_views" / "analysis.db",
@@ -152,7 +161,7 @@ def fit_optional_relation_models(root: Path, output: Path, registry: list[dict])
     }.items():
         data = subset[subset.final_relevance_status_terminal.isin(["核心相关", "语境相关"])].copy()
         for index, strategy in enumerate(strategies):
-            if data[f"s{index}"].sum() < 15 or data[f"s{index}"].nunique() < 2:
+            if data[f"s{index}"].sum() < 20 or data[f"s{index}"].nunique() < 2:
                 continue
             formula = f"s{index} ~ {rhs}"
             table = fit_gee(data, formula)
@@ -162,7 +171,7 @@ def fit_optional_relation_models(root: Path, output: Path, registry: list[dict])
             registry.append({"model_id": f"rq2_{scope}_strategy_{index}", "rq": "RQ2", "outcome": strategy,
                              "scope": scope, "model_family": "binomial_gee_exchangeable", "cluster": "note_id",
                              "n": len(data), "formula": formula})
-        if data.translation_any.sum() >= 15:
+        if data.translation_any.sum() >= 20:
             formula = f"translation_any ~ {rhs}"
             table = fit_gee(data, formula)
             table["scope"] = scope
@@ -178,14 +187,24 @@ def fit_optional_ability_models(output: Path, registry: list[dict]) -> None:
         return
     ability = pd.read_csv(ability_path)
     ability["is_reply"] = (ability.comment_level >= 2).astype(int)
-    for prop, count in ability.ability_property.value_counts().items():
-        if prop == "未明确" or count < 15:
+    properties = ["新闻专业独特", "大学教育通用", "可跨职业迁移", "可由AI替代", "AI辅助强化", "AI强化需求"]
+    file_names = {
+        "新闻专业独特": "news_profession_unique",
+        "大学教育通用": "general_university_education",
+        "可跨职业迁移": "cross_occupation_transfer",
+        "可由AI替代": "ai_replaceable",
+        "AI辅助强化": "ai_assisted",
+        "AI强化需求": "ai_demand_strengthening",
+    }
+    for prop in properties:
+        count = int((ability.ability_property == prop).sum())
+        if count < 15:
             continue
         ability["y"] = (ability.ability_property == prop).astype(int)
         formula = "y ~ C(ability_type) + ai_context + C(source_type) + is_reply"
         table = fit_gee(ability, formula)
         table["property"] = prop
-        safe_name = str(prop).replace("/", "_")
+        safe_name = file_names[prop]
         table.to_csv(output / "rq3" / f"property_{safe_name}_gee.csv", index=False)
         registry.append({"model_id": f"rq3_{prop}", "rq": "RQ3", "outcome": prop,
                          "model_family": "binomial_gee_exchangeable", "cluster": "note_id",
@@ -195,10 +214,11 @@ def fit_optional_ability_models(output: Path, registry: list[dict]) -> None:
 def main() -> None:
     root = Path(os.environ["NEWS_EDU_ROOT"])
     output = Path(os.environ.get("NEWS_EDU_GEE_OUT", root / "formal_gee_results"))
+    db_path = find_database(root)
     (output / "rq1").mkdir(parents=True, exist_ok=True)
     (output / "rq4").mkdir(parents=True, exist_ok=True)
 
-    data = add_indicators(load_comments(find_database(root)))
+    data = add_indicators(load_comments(db_path))
     rhs = " + ".join([f"e{i}" for i in range(len(EVIDENCES))] + [f"o{i}" for i in range(len(OBJECTS))] + [
         "C(source_type)", "is_reply", "is_note_author", "log_text_length"
     ])
@@ -227,9 +247,15 @@ def main() -> None:
     fit_optional_relation_models(root, output, registry)
     fit_optional_ability_models(output, registry)
 
+    database_label = "00_freeze/analysis_v2_frozen.db" if db_path.name == "analysis_v2_frozen.db" else db_path.name
     metadata = {
         "model_policy": "GEE for binary outcomes; negative-binomial models remain separate for count outcomes",
-        "database": str(find_database(root)),
+        "database": database_label,
+        "database_sha256": hashlib.sha256(db_path.read_bytes()).hexdigest(),
+        "label_counts": {
+            str(key): int(value)
+            for key, value in data["stance"].value_counts(dropna=False).to_dict().items()
+        },
         "n_comments": int(len(data)),
         "cluster": "note_id",
         "working_correlation": "Exchangeable",

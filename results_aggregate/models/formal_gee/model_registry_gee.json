@@ -1,6 +1,15 @@
 {
   "model_policy": "GEE for binary outcomes; negative-binomial models remain separate for count outcomes",
-  "database": "C:\\Users\\13067\\Desktop\\论文\\新闻传播教育\\analysis\\02_views\\analysis.db",
+  "database": "00_freeze/analysis_v2_frozen.db",
+  "database_sha256": "f2fb39bf641b1062ec7973c413f1321a76fcb17492ffdb54842818a274f5f0a5",
+  "label_counts": {
+    "无法判断": 5246,
+    "否定": 4961,
+    "认可": 3875,
+    "中性": 3752,
+    "条件性认可": 2309,
+    "条件性否定": 1636
+  },
   "n_comments": 21779,
   "cluster": "note_id",
   "working_correlation": "Exchangeable",
@@ -20,7 +29,7 @@
       "outcome": "negative",
       "model_family": "binomial_gee_exchangeable",
       "cluster": "note_id",
-      "n": 16519,
+      "n": 16533,
       "formula": "negative ~ e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9 + o0 + o1 + o2 + o3 + o4 + o5 + o6 + C(source_type) + is_reply + is_note_author + log_text_length"
     },
     {
@@ -29,7 +38,7 @@
       "outcome": "positive",
       "model_family": "binomial_gee_exchangeable",
       "cluster": "note_id",
-      "n": 16519,
+      "n": 16533,
       "formula": "positive ~ e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9 + o0 + o1 + o2 + o3 + o4 + o5 + o6 + C(source_type) + is_reply + is_note_author + log_text_length"
     },
     {
@@ -302,18 +311,18 @@
       "formula": "translation_any ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9"
     },
     {
-      "model_id": "rq3_可跨职业迁移",
+      "model_id": "rq3_大学教育通用",
       "rq": "RQ3",
-      "outcome": "可跨职业迁移",
+      "outcome": "大学教育通用",
       "model_family": "binomial_gee_exchangeable",
       "cluster": "note_id",
       "n": 1959,
       "formula": "y ~ C(ability_type) + ai_context + C(source_type) + is_reply"
     },
     {
-      "model_id": "rq3_大学教育通用",
+      "model_id": "rq3_可跨职业迁移",
       "rq": "RQ3",
-      "outcome": "大学教育通用",
+      "outcome": "可跨职业迁移",
       "model_family": "binomial_gee_exchangeable",
       "cluster": "note_id",
       "n": 1959,

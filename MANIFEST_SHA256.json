@@ -33,8 +33,8 @@
     },
     {
       "path": "RELEASE_CHECKLIST.md",
-      "sha256": "25b72308fd10628cda91c10b6d014b750a14b10196b8494f682deb2d786d7ff0",
-      "bytes": 1165
+      "sha256": "9b66e31c3261cc7e5aa27fb7c7b7cde6ff71bbec0dc0ad0810cb5de600dcf6ee",
+      "bytes": 1513
     },
     {
       "path": "SANITIZATION_AUDIT.json",
@@ -98,8 +98,8 @@
     },
     {
       "path": "docs/methods/final_model_policy.md",
-      "sha256": "59ac67d29a8add818071f9fa52072a9f0109c1f7b9d33dcd30c17accf159fe07",
-      "bytes": 1222
+      "sha256": "5881a2d73fe6dd4e3c833f3774bff0c37f34f58828d953eb4bc28f7425b13b0f",
+      "bytes": 1476
     },
     {
       "path": "docs/methods/算法与公式文档.md",
@@ -125,6 +125,16 @@
       "path": "docs/reliability/内容分析可靠性报告.md",
       "sha256": "49e473aec913910e3d6702ece499545650c815449df0302b1ce83ddbd1e19df6",
       "bytes": 4984
+    },
+    {
+      "path": "docs/versioning/formal_gee_provenance_20260906.md",
+      "sha256": "6b4211b9ecd59bb65b9a3cb9f56d62004441fd7a71e68c46182eb6b6eea0e502",
+      "bytes": 651
+    },
+    {
+      "path": "docs/versioning/reproducibility_audit_20260906.md",
+      "sha256": "fbb1ab78bbf791dd528e843f4a62791f633f99c243875c2d19b8649bcd870579",
+      "bytes": 1970
     },
     {
       "path": "docs/versioning/terminal_v2.3版本说明.md",
@@ -228,12 +238,12 @@
     },
     {
       "path": "results_aggregate/models/model_registry.csv",
-      "sha256": "224f4ad28d8b7aed4dea68c8d7a75bd56f816d41393f866f252684359b3496c3",
+      "sha256": "67c8e699ac0a67b5331a91cbf6c10bf4056a45e797f3ca5b3a01caeec9c4c000",
       "bytes": 19523
     },
     {
       "path": "results_aggregate/models/model_registry_formal_gee.csv",
-      "sha256": "24f1f18f27222582d3998775653f99805ef436b450e7e6f341fa1a8d9ee83372",
+      "sha256": "cb83bf7531dc6f582b5dad0aa7649e45eeb1cc53e6da5c0605b64f7d18693709",
       "bytes": 8076
     },
     {
@@ -248,28 +258,28 @@
     },
     {
       "path": "results_aggregate/models/formal_gee/README.md",
-      "sha256": "1165b77575781e513e6f6c37b005597846574f021e7333f7f5d20e33ae0ee3e2",
-      "bytes": 718
+      "sha256": "f0c4771cf5aea7fd982818c92999e8101b3a326bd2e6dc79e5af49181be1dc1c",
+      "bytes": 682
     },
     {
       "path": "results_aggregate/models/formal_gee/model_registry_gee.json",
-      "sha256": "a2dd5b868496ce715cf4c1a91b9bf591c0902df504852b18854d3ee428e51ba8",
-      "bytes": 13730
+      "sha256": "4068185dea50ecba3ef5404a16d6f25b69b340e23843663768c5a8239a11dfdb",
+      "bytes": 13941
     },
     {
       "path": "results_aggregate/models/formal_gee/rq1/judgment_clear_gee.csv",
-      "sha256": "5489227be461ec56736b91c1a7392030d8d99ef7c5d10b4bfdb9b71f671e8f6d",
-      "bytes": 4158
+      "sha256": "a5255a3364618692b3ea9cad7262cc3049459f00f937e88d7ce346543ea1335d",
+      "bytes": 4142
     },
     {
       "path": "results_aggregate/models/formal_gee/rq1/negative_gee.csv",
-      "sha256": "4d88d7d8ac2e0d7ce2d190b5d40c09aa9cbdba1edc442bbeb04368a09f5d8f2e",
-      "bytes": 4166
+      "sha256": "ffb72a17aeca1aaa6b97ef9df3ce593793efe225b1d31a7bc361cf8e603c726e",
+      "bytes": 4168
     },
     {
       "path": "results_aggregate/models/formal_gee/rq1/positive_gee.csv",
-      "sha256": "2b315dc7cd15fbdfa2ea5baf34d8900df5d0307664ed47cf3328aac2b1f653b7",
-      "bytes": 4153
+      "sha256": "228f89ea393956bbf7ea7ef2d94900e89ef8825c5a282ab0c9a3027ab1a581e1",
+      "bytes": 4165
     },
     {
       "path": "results_aggregate/models/formal_gee/rq2/adjudicated_plus_high_strategy_0_gee.csv",
@@ -403,18 +413,18 @@
     },
     {
       "path": "results_aggregate/models/formal_gee/rq3/property_cross_occupation_transfer_gee.csv",
-      "sha256": "8b21434ce5c90f7e8369fe8858cfc633c47fc9c1b050c7cfd7dfbf8e308762ac",
-      "bytes": 1044
-    },
-    {
-      "path": "results_aggregate/models/formal_gee/rq3/property_news_profession_unique_gee.csv",
       "sha256": "5a4c46ddacfaf7d0da79df0289ce6cc647ca20b1f102dbd169c873ebb15e6739",
       "bytes": 1044
     },
     {
+      "path": "results_aggregate/models/formal_gee/rq3/property_general_university_education_gee.csv",
+      "sha256": "8b21434ce5c90f7e8369fe8858cfc633c47fc9c1b050c7cfd7dfbf8e308762ac",
+      "bytes": 1044
+    },
+    {
       "path": "results_aggregate/models/formal_gee/rq4/any_like_gee.csv",
-      "sha256": "3ff167b87beef92e2e68b36d4fd73ccc0799bbe509cdcfe128a5799b4dfc7957",
-      "bytes": 4348
+      "sha256": "d3439c1bc15ba68241affe2e1d76f81eb9c7104da9d84b84083a7a43f4fc4bd1",
+      "bytes": 4354
     },
     {
       "path": "results_aggregate/models/rq1/judgment_clear_cluster_glm.csv",
@@ -713,13 +723,18 @@
     },
     {
       "path": "results_aggregate/topics/FASTopic_REPRODUCIBILITY_NOTE.md",
-      "sha256": "5967446a46f5955d1441591b9555c7bb755ec7df969c30037ecb80183f62b155",
-      "bytes": 855
+      "sha256": "51805ea50cfb3c561097eec50f963c6b08901b85d2f16849332470635f8d701a",
+      "bytes": 1571
     },
     {
       "path": "results_aggregate/topics/fastopic_k10_dominant_topic_shares_legacy.csv",
       "sha256": "a0b4f92be7e7db9ba19dd7c8183af0ce4f54734a0283fc69c6b8391f33c8c547",
       "bytes": 1792
+    },
+    {
+      "path": "src/legacy_pipeline/README.md",
+      "sha256": "2a9ba14f3ba4c122bac144f27bcf55431bf3ed6519e1f7d0bef60590604e86a8",
+      "bytes": 697
     },
     {
       "path": "src/legacy_pipeline/stage0_freeze.py",
@@ -923,8 +938,8 @@
     },
     {
       "path": "src/reproducible/final_analysis/run_formal_gee_models.py",
-      "sha256": "b33198f0cb6a52122c3a27e0491b0ff5bfc2f0ecf76d419d0ab58673ca751f26",
-      "bytes": 11401
+      "sha256": "7ceffd4ec446fbc7e19df9766c2dcea41d5499dd78e2213bdc0e6d0e5cc38c64",
+      "bytes": 12606
     },
     {
       "path": "src/reproducible/final_analysis/stage_abc_finalize_data.py",

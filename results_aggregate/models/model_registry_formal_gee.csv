@@ -1,7 +1,7 @@
 model_id,rq,outcome,model_family,cluster,n,formula,scope
 rq1_judgment_clear,RQ1,judgment_clear,binomial_gee_exchangeable,note_id,21779,judgment_clear ~ e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9 + o0 + o1 + o2 + o3 + o4 + o5 + o6 + C(source_type) + is_reply + is_note_author + log_text_length,
-rq1_negative,RQ1,negative,binomial_gee_exchangeable,note_id,16519,negative ~ e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9 + o0 + o1 + o2 + o3 + o4 + o5 + o6 + C(source_type) + is_reply + is_note_author + log_text_length,
-rq1_positive,RQ1,positive,binomial_gee_exchangeable,note_id,16519,positive ~ e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9 + o0 + o1 + o2 + o3 + o4 + o5 + o6 + C(source_type) + is_reply + is_note_author + log_text_length,
+rq1_negative,RQ1,negative,binomial_gee_exchangeable,note_id,16533,negative ~ e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9 + o0 + o1 + o2 + o3 + o4 + o5 + o6 + C(source_type) + is_reply + is_note_author + log_text_length,
+rq1_positive,RQ1,positive,binomial_gee_exchangeable,note_id,16533,positive ~ e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9 + o0 + o1 + o2 + o3 + o4 + o5 + o6 + C(source_type) + is_reply + is_note_author + log_text_length,
 rq4_any_like,RQ4,any_like,binomial_gee_exchangeable,note_id,21779,any_like ~ e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9 + o0 + o1 + o2 + o3 + o4 + o5 + o6 + C(source_type) + is_reply + is_note_author + is_reply:is_note_author + log_text_length,
 rq2_adjudicated_strategy_0,RQ2,同层直接回应,binomial_gee_exchangeable,note_id,1010,s0 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9,adjudicated
 rq2_adjudicated_strategy_1,RQ2,具体能力解释,binomial_gee_exchangeable,note_id,1010,s1 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9,adjudicated
@@ -29,5 +29,5 @@ rq2_full_hybrid_strategy_6,RQ2,反讽与情绪,binomial_gee_exchangeable,note_id
 rq2_full_hybrid_strategy_7,RQ2,话题转移,binomial_gee_exchangeable,note_id,5411,s7 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9,full_hybrid
 rq2_full_hybrid_strategy_8,RQ2,其他,binomial_gee_exchangeable,note_id,5411,s8 ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9,full_hybrid
 rq2_full_hybrid_translation,RQ2,translation_any,binomial_gee_exchangeable,note_id,5411,translation_any ~ is_author + source_negative + is_author:source_negative + C(reply_source_type) + log_reply_length + e0 + e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9,full_hybrid
-rq3_可跨职业迁移,RQ3,可跨职业迁移,binomial_gee_exchangeable,note_id,1959,y ~ C(ability_type) + ai_context + C(source_type) + is_reply,
 rq3_大学教育通用,RQ3,大学教育通用,binomial_gee_exchangeable,note_id,1959,y ~ C(ability_type) + ai_context + C(source_type) + is_reply,
+rq3_可跨职业迁移,RQ3,可跨职业迁移,binomial_gee_exchangeable,note_id,1959,y ~ C(ability_type) + ai_context + C(source_type) + is_reply,
